@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- LEFT -->
+  <div class="left">
+    <h2>🚀 PortfolioForge</h2>
+
+    <input id="name" placeholder="Name">
+    <textarea id="bio" placeholder="Bio"></textarea>
+    <input id="education" placeholder="Education">
+    <input id="experience" placeholder="Experience">
+    <input id="skills" placeholder="Skills (comma separated)">
+    <input id="projects" placeholder="Projects">
+    <input type="file" id="image">
+    <input id="github" placeholder="GitHub">
+    <input id="linkedin" placeholder="LinkedIn">
+
+    <h3>Templates</h3>
+
+    <div class="templates">
+      <div class="template t1 active" onclick="setTemplate('minimal',this)"></div>
+      <div class="template t2" onclick="setTemplate('dark',this)"></div>
+      <div class="template t3" onclick="setTemplate('creative',this)"></div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+    <div id="preview"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
